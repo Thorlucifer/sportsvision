@@ -109,7 +109,7 @@ st.markdown(
 st.markdown('<div class="login-container">', unsafe_allow_html=True)
 
 # Display the logo
-st.image("D:/sports video analysis/homepage/logo.jpg", width=100, use_column_width=False)
+st.image("logo.jpg", width=100, use_column_width=False)
 
 # Display the form
 with st.form(key='login_form'):
