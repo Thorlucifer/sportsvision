@@ -1,4 +1,11 @@
+import os
 import streamlit as st
+
+# Print the current working directory
+st.write("Current working directory:", os.getcwd())
+
+# Update the path to the image
+st.image("logo.jpg", width=100, use_column_width=False)
 
 # Set the page configuration
 st.set_page_config(page_title="Login | SportsVision", page_icon=":lock:")
