@@ -9,7 +9,6 @@ def show():
 st.markdown(
     """
     <style>
-
     .signup-form {
         display: flex;
         flex-direction: column;
@@ -82,18 +81,17 @@ st.markdown(
 # Display the signup form
 st.markdown('<div class="signup-container">', unsafe_allow_html=True)
 
-# Display the logo
-
+# Display the logo (add your logo logic here)
 
 # Display the form
 with st.form(key='signup_form'):
     st.markdown('<h2>Sign Up</h2>', unsafe_allow_html=True)
 
-    email_phone = st.text_input('Email or Phone', '')
-    first_name = st.text_input('First Name', '')
-    last_name = st.text_input('Last Name', '')
-    password = st.text_input('Set Password', '', type='password')
-    confirm_password = st.text_input('Confirm Password', '', type='password')
+    email_phone = st.text_input('Email or Phone', '', key='email_phone')
+    first_name = st.text_input('First Name', '', key='first_name')
+    last_name = st.text_input('Last Name', '', key='last_name')
+    password = st.text_input('Set Password', '', type='password', key='password')
+    confirm_password = st.text_input('Confirm Password', '', type='password', key='confirm_password')
 
     st.markdown(
         '<small>Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.</small>',
@@ -103,9 +101,9 @@ with st.form(key='signup_form'):
     # Buttons for the form
     col1, col2 = st.columns(2)
     with col1:
-        submit_button = st.form_submit_button(label='Sign Up')
+        submit_button = st.form_submit_button(label='Sign Up', key='submit_button')
     with col2:
-        cancel_button = st.form_submit_button(label='Cancel')
+        cancel_button = st.form_submit_button(label='Cancel', key='cancel_button')
 
     if submit_button:
         # Replace with your API call or signup logic
