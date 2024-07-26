@@ -1,32 +1,14 @@
+import os
 import streamlit as st
 
 # Set the page configuration
-st.set_page_config(page_title="Signup | SportsVision", page_icon=":pencil:")
+def show():
+    st.write("Current working directory:", os.getcwd())
 
 # Custom CSS for styling
 st.markdown(
     """
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        color: white;
-        background-color: rgb(2, 8, 37);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        padding: 20px;
-    }
-
-    .signup-container {
-        background: black;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 350px;
-        margin: 0 10px;
-    }
 
     .signup-form {
         display: flex;
@@ -101,7 +83,7 @@ st.markdown(
 st.markdown('<div class="signup-container">', unsafe_allow_html=True)
 
 # Display the logo
-st.image("D:/sports video analysis/homepage/logo.jpg", width=80, use_column_width=False)
+
 
 # Display the form
 with st.form(key='signup_form'):
@@ -118,8 +100,12 @@ with st.form(key='signup_form'):
         unsafe_allow_html=True
     )
 
-    submit_button = st.form_submit_button(label='Sign Up')
-    cancel_button = st.button('Cancel', key='cancel')
+    # Buttons for the form
+    col1, col2 = st.columns(2)
+    with col1:
+        submit_button = st.form_submit_button(label='Sign Up')
+    with col2:
+        cancel_button = st.form_submit_button(label='Cancel')
 
     if submit_button:
         # Replace with your API call or signup logic
