@@ -1,10 +1,6 @@
 import os
 import streamlit as st
 
-# Set the page configuration
-def show():
-    st.write("Current working directory:", os.getcwd())
-
 # Custom CSS for styling
 st.markdown(
     """
@@ -81,8 +77,6 @@ st.markdown(
 # Display the signup form
 st.markdown('<div class="signup-container">', unsafe_allow_html=True)
 
-# Display the logo (add your logo logic here)
-
 # Display the form
 with st.form(key='signup_form'):
     st.markdown('<h2>Sign Up</h2>', unsafe_allow_html=True)
@@ -99,11 +93,8 @@ with st.form(key='signup_form'):
     )
 
     # Buttons for the form
-    col1, col2 = st.columns(2)
-    with col1:
-        submit_button = st.form_submit_button(label='Sign Up', key='submit_button')
-    with col2:
-        cancel_button = st.form_submit_button(label='Cancel', key='cancel_button')
+    submit_button = st.form_submit_button(label='Sign Up')
+    cancel_button = st.form_submit_button(label='Cancel')
 
     if submit_button:
         # Replace with your API call or signup logic
