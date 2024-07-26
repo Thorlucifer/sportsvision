@@ -64,9 +64,7 @@ import streamlit as st
 
 # Set page configuration
 def show():
-
-# Custom CSS for styling
-st.markdown(
+    st.markdown(
     """
     <style>
     #terms-of-service {
