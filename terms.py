@@ -3,10 +3,8 @@ import streamlit as st
 
 # Set page configuration
 def show():
-    st.write("Current working directory:", os.getcwd())
-
-# Custom CSS for styling
-st.markdown(
+    # Custom CSS for styling
+    st.markdown(
     """
     <style>
     #terms-of-service {
