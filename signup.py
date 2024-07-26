@@ -1,8 +1,7 @@
 import os
 import streamlit as st
 def show():
-# Custom CSS for styling
-st.markdown(
+    st.markdown(
     """
     <style>
     .signup-form {
