@@ -2,10 +2,8 @@ import streamlit as st
 import time
 
 # Set the page configuration
-st.set_page_config(page_title="Upload Video | SportsVision", page_icon=":film_strip:")
-
-# Custom CSS for styling
-st.markdown(
+def show():
+    st.markdown(
     """
     <style>
     body {
@@ -20,15 +18,7 @@ st.markdown(
         padding: 0;
     }
 
-    .upload-container {
-        background: black;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        width: 80%;
-        max-width: 600px;
-        text-align: center;
-    }
+    
 
     .upload-form h2 {
         margin-bottom: 20px;
@@ -105,8 +95,6 @@ st.markdown(
 # Display the upload form
 st.markdown('<div class="upload-container">', unsafe_allow_html=True)
 
-# Display the logo
-st.image("D:/sports video analysis/homepage/logo.jpg", width=100, use_column_width=False)
 
 st.markdown('<h2>Upload Your Video for Analysis</h2>', unsafe_allow_html=True)
 
