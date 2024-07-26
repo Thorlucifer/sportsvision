@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 import streamlit as st
 
@@ -60,14 +59,11 @@ st.markdown("""
     unsafe_allow_html=True
 )
 
-
-=======
 import os
 import streamlit as st
 
 # Set page configuration
 def show():
-    st.write("Current working directory:", os.getcwd())
 
 # Custom CSS for styling
 st.markdown(
@@ -122,6 +118,3 @@ st.markdown("""
     """,
     unsafe_allow_html=True
 )
-
-
->>>>>>> origin/main
