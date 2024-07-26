@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 from importlib import import_module
 
@@ -58,4 +57,4 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> origin/main
+
