@@ -1,35 +1,14 @@
 import os
 import streamlit as st
 
-# Print the current working directory
-st.write("Current working directory:", os.getcwd())
-
-# Update the path to the image
-st.image("logo.jpg", width=100, use_column_width=False)
-
-# Set the page configuration
-st.set_page_config(page_title="Login | SportsVision", page_icon=":lock:")
+# Set the page configuration as the first Streamlit command
+def show():
+    st.write("Current working directory:", os.getcwd())
 
 # Custom CSS for styling
 st.markdown(
     """
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        color: white;
-        background-color: rgb(2, 8, 37);
-    }
-
-    .login-container {
-        background: black;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        width: 80%;
-        max-width: 400px;
-        margin: 20px auto;
-    }
-
     .logo {
         width: 100px;
         display: block;
@@ -44,6 +23,7 @@ st.markdown(
 
     .form-group {
         margin-bottom: 20px;
+        background: black;
     }
 
     .form-group label {
@@ -116,7 +96,7 @@ st.markdown(
 st.markdown('<div class="login-container">', unsafe_allow_html=True)
 
 # Display the logo
-st.image("logo.jpg", width=100, use_column_width=False)
+
 
 # Display the form
 with st.form(key='login_form'):
