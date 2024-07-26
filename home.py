@@ -139,7 +139,7 @@ def home():
 # Footer
 # Display the content
 home()
-    st.markdown(
+st.markdown(
     """
     <style>
     body {
