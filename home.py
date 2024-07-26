@@ -3,7 +3,7 @@ import time
 
 # Set the page configuration
 def show():
-<<<<<<< HEAD
+HEAD
         st.markdown("""
         <style>
         .header {
@@ -257,4 +257,4 @@ if uploaded_file is not None:
     )
 
 st.markdown('</div>', unsafe_allow_html=True)
->>>>>>> origin/main
+origin/main
