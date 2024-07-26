@@ -3,7 +3,6 @@ import time
 
 # Set the page configuration
 def show():
-HEAD
         st.markdown("""
         <style>
         .header {
@@ -140,7 +139,6 @@ def home():
 # Footer
 # Display the content
 home()
-=======
     st.markdown(
     """
     <style>
