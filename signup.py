@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-
+df show():
 # Custom CSS for styling
 st.markdown(
     """
