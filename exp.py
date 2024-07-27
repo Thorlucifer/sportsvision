@@ -48,7 +48,7 @@ def show():
     st.markdown(
         """
         <div>
-            <img src="path_to_your_image.jpg" class="experience-image" alt="Experience Our Model">
+            <img src="qr.jpg" class="experience-image" alt="Experience Our Model">
         </div>
         """,
         unsafe_allow_html=True
