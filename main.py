@@ -18,12 +18,14 @@ def main():
     st.sidebar.title("Navigation")
     page = st.sidebar.selectbox("Go to", options=list(pages.keys()))
 
-    # Import and display the selected page
+    # Import and display the selected page dynamically
     try:
-        module = import_module(pages[page])
-        module.show()
+        module = import_module(f"{pages[page]}")
+        module.show()  # Call the `show` function from the selected module
     except ModuleNotFoundError:
         st.error(f"Module {pages[page]} not found.")
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     main()
