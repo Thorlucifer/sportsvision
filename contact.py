@@ -1,13 +1,9 @@
-import os
 import streamlit as st
-
-# Define the page configuration
 
 def show():
     # Custom styling using Streamlit
     st.markdown("""
     <style>
-        
         .contact {
             padding: 2em 0;
             background-color: black;
@@ -22,13 +18,16 @@ def show():
             font-size: 40px;
             margin: 1em 0;
         }
-       
     </style>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
-# Contact Us Page
-st.markdown("""
+    # Contact Us Page
+    st.markdown("""
     <div class="contact">
-        <p>Contact us: <a href="mailto:sportsvision80@gmail.com">sportsvision80@gmail.com</a></p>
+        <p>Contact us: <a href="mailto:sportsvision80@gmail.com" style="color: #1E90FF;">sportsvision80@gmail.com</a></p>
     </div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+
+# Make sure to call the show function
+if __name__ == "__main__":
+    show()
