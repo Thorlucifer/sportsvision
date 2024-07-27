@@ -2,36 +2,36 @@ import streamlit as st
 
 def show():
     st.markdown(
-    """
-    <style>
-    .experience-container {
-        background-color: black;
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .experience-title {
-        color: white;
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    .experience-link {
-        color: #1E90FF;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    .experience-link:hover {
-        text-decoration: underline;
-    }
-    .experience-image {
-        margin-top: 20px;
-        width: 80%;
-        max-width: 800px;
-        border-radius: 10px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
+        """
+        <style>
+        .experience-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .experience-title {
+            color: white;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .experience-link {
+            color: #1E90FF;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .experience-link:hover {
+            text-decoration: underline;
+        }
+        .experience-image {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
     )
 
     # Page Title
@@ -44,14 +44,7 @@ def show():
         unsafe_allow_html=True
     )
 
-    # Place for a picture
-    st.markdown(
-        """
-        <div>
-            <img src="qr.jpeg" class="experience-image" alt="Experience Our Model">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # Display the image
+    st.image("qr.jpeg", caption="Experience Our Model", use_column_width=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
