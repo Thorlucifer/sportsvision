@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 import streamlit as st
 
@@ -35,7 +34,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-=======
 import os
 import streamlit as st
 
@@ -70,6 +68,3 @@ st.markdown("""
         <p>Contact us: <a href="mailto:sportsvision80@gmail.com">sportsvision80@gmail.com</a></p>
     </div>
 """, unsafe_allow_html=True)
-
-
->>>>>>> origin/main
