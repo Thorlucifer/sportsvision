@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 
 # Set page configuration
@@ -153,5 +152,3 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-#
->>>>>>> origin/main
