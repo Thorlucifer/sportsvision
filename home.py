@@ -3,7 +3,6 @@ import time
 
 # Set the page configuration
 def show():
-<<<<<<< HEAD
         st.markdown("""
         <style>
         .header {
@@ -140,8 +139,7 @@ def home():
 # Footer
 # Display the content
 home()
-=======
-    st.markdown(
+st.markdown(
     """
     <style>
     body {
@@ -234,27 +232,3 @@ home()
 st.markdown('<div class="upload-container">', unsafe_allow_html=True)
 
 
-st.markdown('<h2>Upload Your Video for Analysis</h2>', unsafe_allow_html=True)
-
-# File uploader widget
-uploaded_file = st.file_uploader("Drag & Drop your video here", type=["mp4", "mov", "avi"])
-
-if uploaded_file is not None:
-    st.video(uploaded_file, format="video/mp4")  # Display video preview
-
-    # Simulate file upload process
-    with st.spinner("Uploading..."):
-        time.sleep(2)  # Simulate a delay for file upload
-        st.success("Upload complete!")
-
-    st.markdown(
-        """
-        <div class="button-group">
-            <button class="btn" onclick="window.location.href='home.html'">Cancel</button>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-st.markdown('</div>', unsafe_allow_html=True)
->>>>>>> origin/main
