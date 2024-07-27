@@ -73,9 +73,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-#
-=======
 import streamlit as st
 
 # Set page configuration
