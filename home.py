@@ -254,4 +254,4 @@ if uploaded_file is not None:
         unsafe_allow_html=True
     )
 
-st.markdown('</div>', unsafe_allow_html=True) same issue in this
+st.markdown('</div>', unsafe_allow_html=True)
