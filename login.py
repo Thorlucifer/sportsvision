@@ -3,10 +3,7 @@ import streamlit as st
 
 # Set the page configuration as the first Streamlit command
 def show():
-    st.write("Current working directory:", os.getcwd())
-
-# Custom CSS for styling
-st.markdown(
+    st.markdown(
     """
     <style>
     .logo {
