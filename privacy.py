@@ -1,38 +1,30 @@
 import streamlit as st
 
-# Set page configuration
 def show():
-    st.markdown(
-    """
+    st.markdown("""
     <style>
-    .privacy-policy-container {
-        background-color: black;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .privacy-policy-text, .privacy-policy-title {
-        color: white;
-        font-size: 16px;
-        align-items:center;
-    }
-    .privacy-policy-title {
-        font-size: 40px; /* Increased font size */
-        font-weight: bold;
-        align-items:center;
-    }
-   
-    
-    h2 {
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
-    
-    
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+        .privacy-policy-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            }
+            .privacy-policy-text, .privacy-policy-title {
+            color: white;
+            font-size: 16px;
+            align-items:center;
+            }
+            .privacy-policy-title {
+            font-size: 40px; /* Increased font size */
+            font-weight: bold;
+            align-items:center;
+            }
+            h2 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            }
+    <style>
+    """,unsafe_allow_html=True)
 
 
 
@@ -70,6 +62,8 @@ st.markdown(
     <p>If you have any questions about our privacy policy, please get in touch with us at <a href="mailto:sportsvision80@gmail.com" style="color: #1E90FF;">sportsvision80@gmail.com</a></p>
     </div>
     </div>
-    """,
-    unsafe_allow_html=True
-)
+    """,unsafe_allow_html=True)
+# Make sure to call the show function
+if __name__ == "__main__":
+    show()
+
