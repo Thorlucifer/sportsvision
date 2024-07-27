@@ -23,12 +23,6 @@ def show():
         .experience-link:hover {
             text-decoration: underline;
         }
-        .experience-image {
-            margin-top: 20px;
-            width: 80%;
-            max-width: 800px;
-            border-radius: 10px;
-        }
         </style>
         """,
         unsafe_allow_html=True
@@ -44,7 +38,7 @@ def show():
         unsafe_allow_html=True
     )
 
-    # Display the image
-    st.image("qr.jpeg", caption="Experience Our Model", use_column_width=True)
+    # Display the image with a specified width
+    st.image("qr.jpeg", caption="Experience Our Model", width=400)
 
     st.markdown('</div>', unsafe_allow_html=True)
