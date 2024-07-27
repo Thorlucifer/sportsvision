@@ -1,7 +1,5 @@
-import os
 import streamlit as st
 
-# Set page configuration
 def show():
     # Custom CSS for styling
     st.markdown(
@@ -10,6 +8,7 @@ def show():
     #terms-of-service {
         background-color: black;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 20px;
     }
 
     #terms-of-service h2 {
@@ -33,11 +32,10 @@ def show():
     </style>
     """,
     unsafe_allow_html=True
-)
+    )
 
-
-# Terms of Service Section
-st.markdown("""
+    # Terms of Service Section
+    st.markdown("""
     <section id="terms-of-service">
         <div class="container">
             <h2>Terms of Service</h2>
@@ -55,8 +53,8 @@ st.markdown("""
     </section>
     """,
     unsafe_allow_html=True
-)
+    )
 
-
-
-# Set page configuration
+# Make sure to call the show function
+if __name__ == "__main__":
+    show()
